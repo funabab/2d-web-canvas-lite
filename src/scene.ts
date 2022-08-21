@@ -18,21 +18,21 @@ import gsap, { Bounce } from 'gsap'
 
 export class Scene {
   #context: CanvasRenderingContext2D
-  #width: number
-  #height: number
+  // #width: number
+  // #height: number
   #items: Sprite[] = []
   static manager: AssetManager | undefined
   #isReady = false
 
   constructor(
     context: CanvasRenderingContext2D,
-    width: number,
-    height: number,
+    _width: number,
+    _height: number,
     onLoad?: () => void
   ) {
     this.#context = context
-    this.#width = width
-    this.#height = height
+    // this.#width = _width
+    // this.#height = _height
     Scene.manager = new AssetManager({
       onLoad: () => {
         this.#startAnimation()
