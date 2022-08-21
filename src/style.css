@@ -1,0 +1,60 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(34, 34, 34);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.w-screen {
+  width: 100vw;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.relative {
+  position: relative;
+}
+
+#canvas {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.preloader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader span {
+  display: block;
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  filter: drop-shadow(0px 0px 10px red);
+}
